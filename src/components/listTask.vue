@@ -66,13 +66,11 @@
       removeTask(taskId) {
         this.tasks = this.tasks.filter((task) => task.id !== taskId);
       },
-
       editTask(editId) {
         this.editTaskOrNo = true
         let indiceEdit = this.tasks.findIndex(task => task.id === editId);
         this.newTask = this.tasks[indiceEdit].Nome
         this.idEdit = indiceEdit;
-        // this.tasks[indiceEdit].text = this.newTask;
         console.log(this.tasks[indiceEdit].Nome);
       }
     },
