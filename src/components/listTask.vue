@@ -10,16 +10,24 @@
                   <b-button @click="editTask(data.item.id)" variant="primary" size="sm">Editar</b-button>
                 </template>
               </b-table>
+                
               <b-form @submit.prevent="addTask">
-                <b-form-group label="Nova tarefa" label-for="taskInput">
-                  <b-input
-                    id="taskInput"
-                    v-model="newTask"
-                    required
-                    placeholder="Enter a new task"
-                  ></b-input>
-                </b-form-group>
-                <b-button type="submit" variant="primary">Adicionar tarefa</b-button>
+                <b-row>
+                    <b-col>
+                        <b-form-group label-for="taskInput">
+                        <b-input
+                            id="taskInput"
+                            v-model="newTask"
+                            required
+                            placeholder="Enter a new task"
+                        ></b-input>
+                        </b-form-group>
+                    </b-col>
+                    <b-col>
+                        <b-button class="ajusta" type="submit" variant="primary">Adicionar tarefa</b-button>
+                    </b-col>
+                </b-row>
+                
               </b-form>
             </b-card>
           </b-col>
@@ -53,4 +61,10 @@
     },
   };
   </script>
+
+<style>
+    .ajusta {
+        margin-left: -442px;
+    }
+</style>
   
