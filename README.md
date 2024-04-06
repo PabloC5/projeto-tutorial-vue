@@ -1,5 +1,5 @@
 # tutorial-vue
-
+Apenas um projeto simples de uma TODO list em vueJS
 ## Project setup
 ```
 npm install
